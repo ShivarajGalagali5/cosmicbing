@@ -35,7 +35,7 @@ This plan builds the second. You train real (small) models from scratch, compare
 4. **End every stage with the five research checks (§F),** written down, plus the stage's exit criteria and its replication unit.
 5. **Keep the logs** (error, negative results, decisions, predictions, paper critiques) in §8.
 6. **Use LLMs as tutor, reviewer and critic** (§7), not as a source of code you cannot explain.
-7. **Resolve Appendix A/B unknowns in Stage 0C** before you plan token budgets.
+7. **Treat hardware and software unknowns as operational, not as part of the roadmap.** Whether a kernel runs on your GPU, whether FP8 works, your real tokens/s and what fits in 16GB are settled by testing during Stage 0C and later stages. They never change the route or what you learn; they only decide whether a run happens locally or on rented hardware. Appendices A and B hold these notes.
 
 ## E. Route
 
@@ -561,7 +561,9 @@ Re-derive one concept from memory, re-run one old experiment to confirm reproduc
 
 ---
 
-## Appendix A: Setup, hardware and cost (operational; resolve in Stage 0)
+## Appendix A: Setup, hardware and cost (operational notes, not part of the roadmap)
+
+> **Read this first.** Appendices A and B are working notes about one machine. They are **not** curriculum. Open questions here are answered by testing while you learn (mostly Stage 0C), and they only affect *where* a run happens (local vs rented) and its token budget. If a test fails, rent or substitute your own implementation and keep going; the roadmap does not change.
 
 | Item | Spec |
 |---|---|
@@ -593,7 +595,9 @@ Re-derive one concept from memory, re-run one old experiment to confirm reproduc
 
 ---
 
-## Appendix B: Verification status (as of Oct 22, 2026)
+## Appendix B: Verification status (operational notes, as of Oct 22, 2026)
+
+> **Operational, not roadmap.** This records what was checked and what is still unknown about the hardware and software. Unchecked items are not blockers or gaps in the plan: you resolve them by running the tests in Stage 0C, then update this list. Re-check version-sensitive facts before relying on them.
 
 **Confirmed this pass (web sources)**
 - PyTorch has supported Blackwell since 2.7 built with CUDA 12.8.
