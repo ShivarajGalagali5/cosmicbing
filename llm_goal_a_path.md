@@ -1,5 +1,24 @@
 # Goal A Path: Mastering the Standard Modern LLM Stack
 
+## What this is, in plain words
+
+**This is a study-and-practice roadmap, not software.** Nothing in this repo runs. It is an ordered list of things to learn and small models to train, so that you end up understanding how modern LLMs are built and trained.
+
+**What it is for:** becoming able to train a language model from scratch the standard modern way, and to explain and implement the main current variants (MoE, MLA, sliding window, Mamba/SSM, Gated DeltaNet hybrids, Muon, GRPO).
+
+**Who it is for:** you, working on one 16GB GPU (RTX 5060 Ti), renting bigger GPUs only when a stage needs it.
+
+**What you will have at the end:** working code you wrote for a GPT-2-style model and its modern variants, your own scaling curve, an optimizer comparison, an architecture comparison table, a post-trained small model, a quantized model you serve locally, and one distributed run. You will also have the habits to judge new LLM papers critically.
+
+**What it is not:**
+- Not a way to build a frontier-scale model. Your results are about trends across small sizes, not about large models.
+- Not the research track. Testing your own architecture ideas (memory, continual learning, world models) is Goal B and is deliberately left for later.
+- Not a fixed schedule. There are no dates; you move on when a stage's exit criteria are met.
+
+**How to use it:** follow the route below in order. Each stage has a "do" and a "trim" column, and a "done when" checklist at the end. The detailed stage content (readings, exit criteria, failure modes) lives in `llm_mastery_plan_v3.md`.
+
+---
+
 Companion to `llm_mastery_plan_v3.md`. Same stage numbers, same exit criteria, same depth ladder (§2). Only the route changes.
 
 **Goal A:** train an LLM from scratch the standard modern way and absorb current architecture and training variants (MoE, MLA, sliding window, SSM/Mamba, Gated DeltaNet hybrids, Muon, RLVR/GRPO).
